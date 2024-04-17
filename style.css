@@ -1,0 +1,259 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: white;
+    position: relative;
+}
+
+.content {
+    padding: 30px;
+    padding-bottom: 40vh;
+}
+
+
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.header img {
+    height: 100%;
+    width: auto;
+}
+
+
+
+
+/* NAVBAR */
+
+#navbar {
+    position: sticky;
+    top: -1px; /* FIXME aggiunto perché c'è un piccolo spazio in cima.. da verificare */
+    height: 90px;
+    z-index: 999;
+    background-color: #593305;
+    padding: 0 30px;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+.navigation .navbar-nav {
+    flex-flow: row;
+}
+
+.nav-item {
+    flex: 1 1 10%;
+}
+
+.navigation .nav-link {
+    /* background-color: lightgray; */
+    border: 1px solid lightgray;
+    padding: 5px 15px !important;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.navigation .nav-link.active {
+    background-color: #fec800;
+    border-color: #fec800;
+    color: black;
+}
+
+
+
+
+/* SECTION */
+
+.section {
+    /* display: flex;
+    flex-flow: column;
+    gap: 100px; */
+
+    /* padding-top: 100vh; */
+    padding-bottom: 30vh;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+/* .section-title::before,
+.section-title::after {
+  background-color: #00000052;
+  background-color: black;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.section-title::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.section-title::after {
+  left: 0.5em;
+  margin-right: -50%;
+} */
+
+
+
+
+/* CARD */
+
+.scroll-cards {
+    display: block;
+}
+
+.card {
+    /* border: 1px solid red; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 400px;
+
+    --offset: 2em;
+    position: sticky;
+    /* top: max(100px, 10em); */
+    top: 100px;
+    min-height: 19em;
+    background: #fff;
+    /* box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1); */
+    min-height: 19em;
+    margin: auto;
+}
+
+.scroll-cards > .card + .card {
+    margin-top: 4em;
+}
+
+.card:nth-of-type(0) {
+    transform: translate(0, calc((0 - 1) * var(--offset)));
+}
+.card:nth-of-type(1) {
+    transform: translate(0, calc((1 - 1) * var(--offset)));
+}
+.card:nth-of-type(2) {
+    transform: translate(0, calc((2 - 1) * var(--offset)));
+}
+.card:nth-of-type(3) {
+    transform: translate(0, calc((3 - 1) * var(--offset)));
+}
+.card:nth-of-type(4) {
+    transform: translate(0, calc((4 - 1) * var(--offset)));
+}
+.card:nth-of-type(5) {
+    transform: translate(0, calc((5 - 1) * var(--offset)));
+}
+
+.card-image {
+    height: 300px;
+    z-index: 2;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content {
+    border-radius: 40px;
+    padding: 30px 40px;
+    z-index: 3;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.card-title {
+    /* padding: 10px 0; */
+    /* padding-top: 0; */
+    /* text-transform: uppercase; */
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    /* font-family: "Permanent Marker", cursive; */
+    font-weight: 500;
+    color: #593305;
+
+    /* font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.card-dash {
+    content: '';
+    width: 30px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.card-ingredients {
+    /* padding: 20px; */
+    /* padding-top: 0; */
+    font-size: 14px;
+    font-style: italic;
+    color: gray;
+}
+
+.card-price {
+    /* padding: 20px; */
+    /* padding-top: 0; */
+    font-size: 24px;
+    color: gray;
+}
+/* .card-price::before,
+.card-price::after {
+  background-color: #00000052;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.card-price::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.card-price::after {
+  left: 0.5em;
+  margin-right: -50%;
+} */
