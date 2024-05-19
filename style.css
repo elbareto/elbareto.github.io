@@ -66,7 +66,8 @@ body {
 .home-page {
     width: 100%;
     overflow: hidden;
-    height: 100vh;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
     position: relative;
 }
 .background-wrapper {
@@ -79,16 +80,23 @@ body {
     object-fit: cover;
     object-position: left;
 }
-.home-page p {
+.home-page a {
     width: 100%;
     position: absolute;
-    bottom: 100px;
+    bottom: 90px;
     color: var(--light-color);
     text-align: center;
     z-index: 99;
 
     font-family: MyriadPro-Regular;
     font-size: 24px;
+}
+.home-page a p {
+    margin: 0;
+}
+.home-page a img {
+    width: 100px;
+    height: 100px;
 }
 
 .background-wrapper:before {
