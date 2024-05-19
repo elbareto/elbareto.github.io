@@ -19,12 +19,31 @@
     </div>
 
     
-    <div class="content">
+    <div class="home-page">
+        <div class="background-wrapper">
+            <img src="img/birra-home-page.jpg" alt="" srcset="">
+        </div>
+        <p><a href="#menu">Scopri il nostro menù</a></p>
+    </div>
+
+    <div id="menu" class="content">
 
         <div class="filters">
-            <div id="all-filter" class="filter-chip active" onclick="filterSelection(this.id, 'all')">Tutto</div>
-            <div id="cibo-filter" class="filter-chip" onclick="filterSelection(this.id, 'cibo')">Cibo</div>
-            <div id="bevande-filter" class="filter-chip" onclick="filterSelection(this.id, 'bevande')">Bevande</div>
+
+            <div id="all-filter" class="filter-chip active" onclick="filterSelection(this.id, 'all')">
+                <img src="img/burger-menu.png" alt="" srcset="">
+                <p>Tutto</p>
+            </div>
+
+            <div id="cibo-filter" class="filter-chip" onclick="filterSelection(this.id, 'cibo')">
+                <img src="img/burger.png" alt="" srcset="">
+                <p>Cibo</p>
+            </div>
+
+            <div id="bevande-filter" class="filter-chip" onclick="filterSelection(this.id, 'bevande')"><img src="img/beer-mug.png" alt="" srcset="">
+                <p>Bevande</p>
+            </div>
+
         </div>
 
         <div id="toastoni" class="categoria filter cibo">
@@ -34,14 +53,18 @@
             <div class="categoria-piatti">
 
                 <div class="piatto">
-                    <div class="piatto-nome">Toastone Classico</div>
-                    <div class="piatto-prezzo">5,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Toastone Classico</div>
+                        <div class="piatto-prezzo">5,00</div>
+                    </div>
                     <div class="piatto-descrizione">Prosciutto, formaggio</div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Toastone alle verdure</div>
-                    <div class="piatto-prezzo">5,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Toastone alle verdure</div>
+                        <div class="piatto-prezzo">5,50</div>
+                    </div>
                     <div class="piatto-descrizione">Prosciutto, formaggio, pomodoro, insalata, zucchine, peperoni</div>
                 </div>
             </div>
@@ -55,20 +78,26 @@
             <div class="categoria-piatti">
 
                 <div class="piatto">
-                    <div class="piatto-nome">Veneto</div>
-                    <div class="piatto-prezzo">6,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Veneto</div>
+                        <div class="piatto-prezzo">6,00</div>
+                    </div>
                     <div class="piatto-descrizione">Pastin, formaggio</div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Ludro</div>
-                    <div class="piatto-prezzo">7,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Ludro</div>
+                        <div class="piatto-prezzo">7,00</div>
+                    </div>
                     <div class="piatto-descrizione">Pastin, pancetta, formaggio, cipolla, peperoni, zucchine</div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Goloso</div>
-                    <div class="piatto-prezzo">6,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Goloso</div>
+                        <div class="piatto-prezzo">6,50</div>
+                    </div>
                     <div class="piatto-descrizione">Pastin, pancetta, formaggio, cipolla, insalata, pomodoro</div>
                 </div>
             </div>
@@ -82,14 +111,18 @@
             <div class="categoria-piatti">
 
                 <div class="piatto">
-                    <div class="piatto-nome">Primavera</div>
-                    <div class="piatto-prezzo">6,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Primavera</div>
+                        <div class="piatto-prezzo">6,00</div>
+                    </div>
                     <div class="piatto-descrizione">Prosciutto, formaggio, insalata, pomodoro</div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Sbrodolona</div>
-                    <div class="piatto-prezzo">7,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Sbrodolona</div>
+                        <div class="piatto-prezzo">7,00</div>
+                    </div>
                     <div class="piatto-descrizione">Pastin a pezzi, pancetta, formaggio, cipolla, peperoni, zucchine</div>
                 </div>
             </div>
@@ -103,13 +136,17 @@
             <div class="categoria-piatti">
 
                 <div class="piatto">
-                    <div class="piatto-nome">Wurstel con patate fritte</div>
-                    <div class="piatto-prezzo">6,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Wurstel con patate fritte</div>
+                        <div class="piatto-prezzo">6,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Originale Pastin d'Alpago <span style="display: inline-block;">con patate fritte</span></div>
-                    <div class="piatto-prezzo">7,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Originale Pastin d'Alpago <span style="display: inline-block;">con patate fritte</span></div>
+                        <div class="piatto-prezzo">7,00</div>
+                    </div>
                 </div>
             </div>
 
@@ -121,8 +158,10 @@
 
             <div class="categoria-piatti">
                 <div class="piatto">
-                    <div class="piatto-nome">Patate fritte</div>
-                    <div class="piatto-prezzo">3,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Patate fritte</div>
+                        <div class="piatto-prezzo">3,50</div>
+                    </div>
                 </div>
             </div>
 
@@ -135,48 +174,66 @@
             <div class="categoria-piatti">
 
                 <div class="piatto">
-                    <div class="piatto-nome">Birra bionda</div>
-                    <div class="piatto-prezzo">3,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Birra bionda</div>
+                        <div class="piatto-prezzo">3,50</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Tagliere di <span style="display: inline-block;">birra bionda (8 pz)</span></div>
-                    <div class="piatto-prezzo">26,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Tagliere di <span style="display: inline-block;">birra bionda (8 pz)</span></div>
+                        <div class="piatto-prezzo">26,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Ombra di bianco</div>
-                    <div class="piatto-prezzo">1,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Ombra di bianco</div>
+                        <div class="piatto-prezzo">1,00</div>
+                    </div>
                 </div>
                 
                 <div class="piatto">
-                    <div class="piatto-nome">Bottiglia di Prosecco</div>
-                    <div class="piatto-prezzo">12,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Bottiglia di Prosecco</div>
+                        <div class="piatto-prezzo">12,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Acqua minerale naturale ½ L</div>
-                    <div class="piatto-prezzo">1,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Acqua minerale naturale ½ L</div>
+                        <div class="piatto-prezzo">1,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Acqua minerale frizzante ½ L</div>
-                    <div class="piatto-prezzo">1,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Acqua minerale frizzante ½ L</div>
+                        <div class="piatto-prezzo">1,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Lattina di Coca Cola</div>
-                    <div class="piatto-prezzo">2,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Lattina di Coca Cola</div>
+                        <div class="piatto-prezzo">2,50</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">The al limone</div>
-                    <div class="piatto-prezzo">2,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">The al limone</div>
+                        <div class="piatto-prezzo">2,50</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">The alla pesca</div>
-                    <div class="piatto-prezzo">2,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">The alla pesca</div>
+                        <div class="piatto-prezzo">2,50</div>
+                    </div>
                 </div>
             </div>
 
@@ -188,33 +245,45 @@
 
             <div class="categoria-piatti">
                 <div class="piatto">
-                    <div class="piatto-nome">Spritz Aperol</div>
-                    <div class="piatto-prezzo">3,50</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Spritz Aperol</div>
+                        <div class="piatto-prezzo">3,50</div>
+                    </div>
                 </div>
     
                 <div class="piatto">
-                    <div class="piatto-nome">Caraffa di Spritz Aperol</div>
-                    <div class="piatto-prezzo">15,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Caraffa di Spritz Aperol</div>
+                        <div class="piatto-prezzo">15,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Hugo</div>
-                    <div class="piatto-prezzo">4,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Hugo</div>
+                        <div class="piatto-prezzo">4,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Mojito</div>
-                    <div class="piatto-prezzo">6,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Mojito</div>
+                        <div class="piatto-prezzo">6,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Gin Tonic</div>
-                    <div class="piatto-prezzo">6,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Gin Tonic</div>
+                        <div class="piatto-prezzo">6,00</div>
+                    </div>
                 </div>
 
                 <div class="piatto">
-                    <div class="piatto-nome">Gin Lemon</div>
-                    <div class="piatto-prezzo">6,00</div>
+                    <div class="piatto-nome-wrapper">
+                        <div class="piatto-nome">Gin Lemon</div>
+                        <div class="piatto-prezzo">6,00</div>
+                    </div>
                 </div>
             </div>
 
@@ -227,43 +296,55 @@
             <div class="categoria-piatti">
                 <div class="filter cibo">
                     <div class="piatto">
-                        <div class="piatto-nome">Piadina con Nutella</div>
-                        <div class="piatto-prezzo">4,50</div>
+                        <div class="piatto-nome-wrapper">
+                            <div class="piatto-nome">Piadina con Nutella</div>
+                            <div class="piatto-prezzo">4,50</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="filter bevande">
                     <div class="piatto">
-                        <div class="piatto-nome">Liquirizia</div>
-                        <div class="piatto-prezzo">2,50</div>
+                        <div class="piatto-nome-wrapper">
+                            <div class="piatto-nome">Liquirizia</div>
+                            <div class="piatto-prezzo">2,50</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="filter bevande">
                     <div class="piatto">
-                        <div class="piatto-nome">Limoncello</div>
-                        <div class="piatto-prezzo">2,50</div>
+                        <div class="piatto-nome-wrapper">
+                            <div class="piatto-nome">Limoncello</div>
+                            <div class="piatto-prezzo">2,50</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="filter bevande">
                     <div class="piatto">
-                        <div class="piatto-nome">Tagliere Liquirizia (10 pz)</div>
-                        <div class="piatto-prezzo">23,00</div>
+                        <div class="piatto-nome-wrapper">
+                            <div class="piatto-nome">Tagliere Liquirizia (10 pz)</div>
+                            <div class="piatto-prezzo">23,00</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="filter bevande">
                     <div class="piatto">
-                        <div class="piatto-nome">Tagliere Limoncello (10 pz)</div>
-                        <div class="piatto-prezzo">23,00</div>
+                        <div class="piatto-nome-wrapper">
+                            <div class="piatto-nome">Tagliere Limoncello (10 pz)</div>
+                            <div class="piatto-prezzo">23,00</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="filter bevande">
                     <div class="piatto">
-                        <div class="piatto-nome">Caffè</div>
-                        <div class="piatto-prezzo">1,00</div>
+                        <div class="piatto-nome-wrapper">
+                            <div class="piatto-nome">Caffè</div>
+                            <div class="piatto-prezzo">1,00</div>
+                        </div>
                     </div>
                 </div>
 
