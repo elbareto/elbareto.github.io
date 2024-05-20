@@ -1,4 +1,4 @@
-filterSelection("all-filter", "all");
+filterSelection("cibo-filter", "cibo");
 
 function filterSelection(filterButtonId, filterClass) {
     if (filterClass == "all") {

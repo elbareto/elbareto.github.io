@@ -48,14 +48,20 @@ body {
     position: fixed;
     top: 0;
     overflow: hidden;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* box-shadow: 0px 0px 8px rgba(0,0,0,.6); */
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     z-index: 999;
     background-color: var(--light-color);
+}
+.header a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header img {
     height: 60%;
@@ -130,7 +136,7 @@ body {
 }
 
 .filter-chip {
-    padding: 7px 25px;
+    padding: 10px 25px;
     border-radius: 12px;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -144,6 +150,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 7px;
+
+    flex-basis: 50%;
+    flex-grow: 1;
 }
 .filter-chip img {
     height: 20px;
@@ -169,7 +178,7 @@ body {
     display: none;
 }
 
-.categoria {
+.categoria:not(:last-of-type) {
     margin-bottom: 70px;
 }
 
@@ -216,7 +225,7 @@ body {
     font-size: 20px;
     line-height: 20px;
 
-    width: 80%;
+    width: calc(100% - 80px);
     overflow: hidden;
 }
 
