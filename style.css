@@ -263,7 +263,7 @@ body {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 200px) {
     .filters {
         flex-direction: column;
     }
